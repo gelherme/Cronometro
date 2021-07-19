@@ -13,8 +13,24 @@ body {
 section.interface {
     width: 150px;
     height: 300px;
+    font-size: 30px;
     margin: 25% auto;
-    background-color: rgb(31, 30, 30);
+    text-align: center;
+    background-color: rgb(179, 179, 179);
     border-radius: 100px;
     border: 10px solid rgb(15, 15, 15)
+}
+
+.seta-esquerda-cima {
+
+    display: inline-block;
+
+}
+
+.seta-direita-cima {
+    display: inline-block;
+}
+
+.seta-direita-baixo{
+    display: inline-block;
 }
