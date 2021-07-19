@@ -11,6 +11,8 @@ body {
 }
 
 section.interface {
+    display: flex;
+    align-items: center;
     width: 150px;
     height: 300px;
     font-size: 30px;
@@ -21,16 +23,12 @@ section.interface {
     border: 10px solid rgb(15, 15, 15)
 }
 
-.seta-esquerda-cima {
-
-    display: inline-block;
-
+.cima{
+    width: 100%;
 }
-
-.seta-direita-cima {
-    display: inline-block;
+.meio{
+    width: 100%;
 }
-
-.seta-direita-baixo{
-    display: inline-block;
+.baixo{
+    width: 100%;
 }
