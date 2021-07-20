@@ -11,19 +11,21 @@
     <div class="container">
         <section class="interface">
             <div class="botao">
-                <p class="mais esq">+</p>
-                <p class="mais dir">+</p>
-                <p class="zero">00</p>
+                <p id="maisEsq" class="mais esq" onclick="somaMinuto()">+</p>
+                <p id="maisDir" class="mais dir">+</p>
+                <p id="minutos" class="zero">00</p>
                 <p class="zero">:</p>
-                <p class="zero">00</p>
-                <p class="menos esq">-</p>
-                <p class="menos dir">-</p>
+                <p id="segundos" class="zero">00</p>
+                <p id="menosEsq" class="menos esq" onclick="diminuiMinuto()">-</p>
+                <p id="menosDir" class="menos dir">-</p>
             </div><!--botao-->
             <p class="play"><b>></b></p>
 
             
         </section><!--interface-->
     </div><!--container-->
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>
