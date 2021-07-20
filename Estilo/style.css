@@ -10,25 +10,51 @@ body {
 
 }
 
-section.interface {
+.container{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items:center;
+    height: 650px;
+    
+
+}
+
+section.interface {
     width: 150px;
     height: 300px;
     font-size: 30px;
-    margin: 25% auto;
     text-align: center;
     background-color: rgb(179, 179, 179);
     border-radius: 100px;
     border: 10px solid rgb(15, 15, 15)
 }
 
-.cima{
-    width: 100%;
+.botao{
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-top: 50%;
+    
 }
-.meio{
-    width: 100%;
+
+.botao p{
+    width: 50%;
+    
 }
-.baixo{
-    width: 100%;
+
+.botao p.zero{
+    width: 33%;
+    color: rgb(3, 68, 3);
 }
+
+.play{
+    font-size: 40px;
+    color: blanchedalmond;
+    margin-top: 13%;
+    height: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: black;
+}
+
