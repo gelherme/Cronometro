@@ -1,24 +1,11 @@
-let maisEsq = document.getElementById('maisEsq').innerHTML;
-let maisDir = document.getElementById('maisDir').innerHTML;
-let menosEsq = document.getElementById('menosEsq').innerHTML;
-let menosDir = document.getElementById('menosDir').innerHTML;
+// bugs
+// [minutos] quando solicitado para aumentar logo depois de diminuir, é diminuido + uma casa.(tentar usar looping)
+
 let minutos = document.getElementById('minutos').innerHTML;
 let segundos = document.getElementById('segundos').innerHTML;
 
-let minutoAtual;
-
-let segundoAtual;
-
-function inicio(){
-
-}
-
 //function onclick para somar os minutos
 function somaMinuto(){
-   // if(minutos < '00'){
-   //     return "00"
-   // }else 
-   // bug travando no zero
     if(minutos < "10"){
     document.getElementById('minutos').innerHTML = '0'+minutos ++}else{
         document.getElementById('minutos').innerHTML = minutos ++
@@ -29,9 +16,34 @@ function somaMinuto(){
 function diminuiMinuto(){
     if(minutos < "00"){
         return "00"
-    }else if(minutos < "10"){
+    }else if(minutos < "10" && minutos > "-1"){
         document.getElementById('minutos').innerHTML = '0'+minutos --}else{
             document.getElementById('minutos').innerHTML = minutos --
 }
 }
+
+//function onclick para somar os segundos
+
+function somaSegundo(){
+
+    if(segundos < "10"){
+        document.getElementById('segundos').innerHTML = '0' + segundos ++
+    }else if(segundos > "-1" && segundos < "60"){
+        document.getElementById('segundos').innerHTML = segundos ++
+    }
+}
+
+//function onclick para diminuir os segundos
+
+
+function diminuiSegundo(){
+    if(segundos < "00"){
+        return "00"
+    }else if(segundos < "10"){
+        document.getElementById('segundos').innerHTML = '0'+segundos --}else if(segundos >= "00" && segundos < "59"){
+            document.getElementById('segundos').innerHTML = segundos --
+}
+}
+
+
 
