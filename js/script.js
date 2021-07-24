@@ -11,6 +11,8 @@ function somaMinuto(){
         document.getElementById('minutos').innerHTML = minutos ++
     }
 }
+
+
 //function onclick para diminuir os minutos
 
 function diminuiMinuto(){
@@ -43,6 +45,23 @@ function diminuiSegundo(){
         document.getElementById('segundos').innerHTML = '0'+segundos --}else if(segundos >= "00" && segundos < "59"){
             document.getElementById('segundos').innerHTML = segundos --
 }
+}
+
+//function iniciar cronometro
+/*arrumar*/ 
+function iniciarCronometro(){
+    function iniciarSegundos(){
+        for( var segundos = document.getElementById("segundos").innerHTML;segundos >"00";segundos--){
+            if(minutos > "00"){
+                minutos--;
+                segundos = "59";
+              // codigo para debugar  console.log(segundos)
+            }else{
+                minutos = "00";
+            }
+        }
+    }
+    iniciarSegundos();
 }
 
 

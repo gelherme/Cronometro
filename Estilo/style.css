@@ -59,22 +59,22 @@ section.interface {
     background-color: rgb(53, 52, 52);
 }
 
-.mais:hover{
-    font-size: 35px;
+.mais:active{
+    
     color: white;
     background-color: rgb(44, 43, 43);
     border: 1px solid white;
 }
 
-.menos:hover{
-    font-size: 35px;
+.menos:active{
+  
     color: white;
     background-color: rgb(44, 43, 43);
     border: 1px solid white;
 }
 
-.play:hover{
-    font-size: 35px;
+.play:active{
+   
     color: white;
     background-color: rgb(44, 43, 43);
     border: 1px solid white;
