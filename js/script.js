@@ -4,10 +4,11 @@ let interfaceSeg = document.getElementById('segundos');
 
 function iniciarCronometro(){
    let timer = setInterval(()=>{
-        interfaceSeg.innerHTML--;
-        if(interfaceSeg.innerHTML == 0 && interfaceMin.innerHTML > 0){
-            interfaceSeg.innerHTML = 59;
-            interfaceMin.innerHTML --;
+       if(interfaceSeg.innerHTML > 0){
+           interfaceSeg.innerHTML --;
+       }else if(interfaceMin.innerHTML > 0 && interfaceSeg.innerHTML == 0){
+           interfaceMin.innerHTML --;
+           interfaceSeg.innerHTML = 59;
         }else if(interfaceSeg.innerHTML == 0 && interfaceMin.innerHTML == 0){
             clearInterval(timer);
             setTimeout(()=>{alert("Terminou")},500);
