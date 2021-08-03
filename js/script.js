@@ -1,18 +1,19 @@
-let acrecentaMin = document.getElementById('maisEsq');
-let acrecentaSeg = document.getElementById('maisDir');
-let diminuiMin = document.getElementById('menosEsq');
-let diminuiSeg = document.getElementById('menosDir');
 let interfaceMin = document.getElementById('minutos');
 let interfaceSeg = document.getElementById('segundos');
 
-//terminar função
-function iniciarCronometro(){
-    let min = interfaceMin.innerHTML;
-    let seg = interfaceSeg.innerHTML;
 
-    setTimeout(()=>{for(i = interfaceSeg.innerHTML ; i >= 0; i--){
-        interfaceSeg.innerHTML=i;
-    }},1000);
+function iniciarCronometro(){
+   let timer = setInterval(()=>{
+        interfaceSeg.innerHTML--;
+        if(interfaceSeg.innerHTML == 0 && interfaceMin.innerHTML > 0){
+            interfaceSeg.innerHTML = 59;
+            interfaceMin.innerHTML --;
+        }else if(interfaceSeg.innerHTML == 0 && interfaceMin.innerHTML == 0){
+            clearInterval(timer);
+            setTimeout(()=>{alert("Terminou")},500);
+            
+        }
+    },1000)
 }
 
 
@@ -41,3 +42,4 @@ function diminuiSegundo(){
         interfaceSeg.innerHTML--;}
       
    }
+
